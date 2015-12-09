@@ -1,0 +1,13 @@
+<h1>Config - Controllers</h1>
+{foreach name=index item=c from=$controllers}
+	<div class="controllerconfig">
+		<h3>${c.name} - ${c.version}</h3>
+		<span class="enable${c.enabled}">${c.enabled}</span>
+		<div class="clearboth"></div>
+		<div class="information">
+			Author: ${c.author} - ${c.author_email}<br />
+			Website: <a href="${c.website}">${c.website}</a><br />
+			License: <a href="${c.license}">${c.license}</a>
+		</div>
+	</div>
+{/foreach}

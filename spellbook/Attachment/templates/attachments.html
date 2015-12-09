@@ -1,0 +1,7 @@
+<h3>Attachments</h3>
+<ul>
+{foreach name=index item=a from=$attachments}
+	<li><a href="${prepath}/attachment/${cont}/${action}/${a.name}?action=view">${a.name}</a> 
+	(${a.filesize}) - ${a.desc}added by ${a.user} on ${a.lastupdate}.</li>
+{/foreach}
+</ul>

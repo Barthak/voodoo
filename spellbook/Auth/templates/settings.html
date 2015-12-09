@@ -1,0 +1,35 @@
+${message}
+<form method="post"  action="${prepath}/auth/settings" target="_top">
+<input type="hidden" name="action" value="updatesettings" />
+<table class="login">
+	<tbody>
+	<tr>
+		<td colspan="2">Enter the username and password: </td>
+	</tr>
+	<tr>
+		<th>Username:</th>
+		<td><input class="text" type="text" name="handle" size="30" maxlength="64" value="${username}" /></td>
+	</tr>
+	<tr>
+		<th>Current password:</th>
+		<td><input class="text" type="password" name="current_passwd" size="15" maxlength="14" /></td>
+	</tr>
+	<tr>
+		<th>New password:</th>
+		<td><input class="text" type="password" name="passwd" size="15" maxlength="14" /></td>
+	</tr>
+	<tr>
+		<th>Retype new password:</th>
+		<td><input class="text" type="password" name="passwd_verify" size="15" maxlength="14" /></td>
+	</tr>
+	<tr>
+		<th>Email:</th>
+		<td><input class="text" type="text" name="email" size="30" maxlength="40" value="${email}" /></td>
+	</tr>
+	<tr>
+		<td><input type="submit" value="Update settings" /> <input type="reset" value="Clear" /></td>
+		<td></td>
+	</tr>
+	</tbody>
+</table>
+</form>

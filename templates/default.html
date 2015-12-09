@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/includes/i-w/xhtml1-transitional.dtd">
+<html>
+
+<head>
+	<title>${title} - ${site_title}</title>
+	<meta name="keywords" content="Voodoo, Wiki Engine, PHP, Community, Roleplay" />
+	${script}
+	{foreach name=index item=s from=$styles}
+		<link rel="stylesheet" type="text/css" href="${prepath}/style/${index}" />
+	{/foreach}
+</head>
+<body>
+
+<table class="maintable" cellpadding="0" cellspacing="0">
+<tr>
+
+<td width="200" class="navbar">
+<h2>Project Voodoo</h2>
+<br />
+<h5>navigation</h5>
+<div class="navigation">
+	<ul style="list-style: square">
+		{foreach name=index item=m from=$menu}
+			<li><a href="${prepath}/${m.link}">${m.title}</a></li>
+		{/foreach}
+	</ul>
+</div>
+<img src="${prepath}/images/0.gif" width="200" height="1" />
+</td>
+<td width="100%">
+<div class="login"><a href="${prepath}/wiki/WikiLogin">Sign in / Create Account</a></div>
+
+<span class="spacer"></span>
+{foreach name=index item=t from=$tabs}
+<span class="contentwikibutton ${t.active}"><a href="${request_uri}?action=${t}">${t.name}</a></span>${t.extra}
+{/foreach}
+<div class="content">
+	${content}
+</div>
+</td>
+</tr>
+</table>
+
+<div class="copyright">
+Powered by <a href="http://voodoo.dalines.org">Project Voodoo</a>.<br />Copyright 2007-2008, <a href="http://www.dalines.org">Dalines Software Library</a>.
+</div>
+
+</body>
+</html>

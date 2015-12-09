@@ -1,0 +1,27 @@
+div.controllerconfig {
+	margin: 10px 20px;
+	width: 80%;
+	border: 1px solid #CCC;
+	padding: 4px;
+	background-color: #FFE;
+}
+
+div.controllerconfig h3 {
+	float: left;
+}
+
+span.enableEnabled {
+	color: #060;
+	font-weight: bold;
+	float: right;
+}
+
+span.enableDisabled {
+	color: #600;
+	font-weight: bold;
+	float: right;
+}
+
+div.clearboth {
+	clear: both;
+}

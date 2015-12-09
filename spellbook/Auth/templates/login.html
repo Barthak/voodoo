@@ -1,0 +1,38 @@
+${message}
+<form method="post"  action="${prepath}/auth/login" target="_top">
+<input type="hidden" name="action" value="dologin" />
+<table class="login">
+	<tbody>
+	<tr>
+		<td colspan="2">
+			Please enter your  handle and password:
+		</td>
+	</tr>
+	<tr>
+		<th>
+			Handle:
+		</th>
+		<td>
+			<input class="text" type="text" name="handle" size="12" maxlength="40" class="" />
+		</td>
+	</tr>
+	<tr>
+		<th>
+			Password:
+		</th>
+		<td>
+			<input class="text" type="password" name="passwd" size="12" maxlength="12" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="submit" value="Log In" /> <input type="reset" value="Clear" />
+			
+		</td>
+		<td>
+			<a href="${prepath}/auth/register">Register here</a>
+		</td>
+	</tr>
+	</tbody>
+</table>
+</form>

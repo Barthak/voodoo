@@ -1,0 +1,24 @@
+<h2>Add Attachment to <a href="${prepath}/${controller}/${action}">${action}</a></h2>
+
+${error}
+
+<form action="${prepath}/attachment/${controller}/${action}" method="post" enctype="multipart/form-data">
+<input type="hidden" name="action" value="${formaction}" />
+
+<label>File:<br />
+	<input type="file" name="attachment" />
+</label>
+<br /><br />
+<fieldset class="attachment">
+	<legend>Attachment Info</legend>
+   
+	<div>
+		<label>Description of the file (optional):<br />
+		<input type="text" name="description" size="60" /></label>
+	</div>
+	<br />
+</fieldset>
+<br />
+<input type="submit" value="Add attachment" /> 
+<input type="button" value="Cancel" onclick="document.location.href='${prepath}/${controller}/${action}';" /> 
+</form>

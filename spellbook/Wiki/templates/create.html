@@ -1,0 +1,8 @@
+<h2>Create Wiki `${handle}`</h2>
+This page does not yet exists, please create it below.
+${preview}
+You can use <a href="${prepath}/wiki/WikiFormatting">WikiFormatting</a> here.
+<form action="${prepath}${formaction}" method="post">
+	<textarea name="wikicontent" class="wikicontent">${content}</textarea>
+	<p><input type="submit" value="${actiontype}" name="save" /> <input type="submit" name="preview" value="Preview page" /> ${buttons}</p>
+</form>
