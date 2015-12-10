@@ -7,7 +7,7 @@
  * @license www.dalines.org/license
  * @copyright 2007, Dalines Software Library
  */
-class SessionHandler
+class _SessionHandler
 {
 	/**
 	 * @var Database $db
@@ -30,7 +30,7 @@ class SessionHandler
 	 * Constructor
 	 * @param string $tbl TableName where the session data is stored/retrieved from
 	 */
-	function SessionHandler($tbl='TBL_SESSION_DATA')
+	function _SessionHandler($tbl='TBL_SESSION_DATA')
 	{
 		$conf = parse_ini_file(CONF.'engine.ini',true);
 		require_once(CLASSES.'Database.php');
@@ -169,7 +169,7 @@ class SessionHandler
 	}
 }
 
-$session = new SessionHandler();
+$session = new _SessionHandler();
 if($session->isReady()){
 	session_set_save_handler(array(&$session,"open"),
                          array(&$session,"close"),
