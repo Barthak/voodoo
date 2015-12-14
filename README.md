@@ -50,3 +50,7 @@ After you have execute those queries in one way or another, your Project site is
 **Note:** You can only create an Admin user in case the project does not have one already, or, if your user has *admin.create* privileges.
 
 Your Project site is now ready.
+
+### Project availability
+
+This project was made available through github to keep supporting the Dalines: Sheet Generator community. However, the project itself is outdated and has some major design flaws (plus its PHP, haha). The last real update is from February 2010. Please use at your own risk.
